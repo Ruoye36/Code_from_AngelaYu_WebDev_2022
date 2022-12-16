@@ -1,0 +1,15 @@
+{
+  "name": "my-express-server",
+  "version": "1.0.0",
+  "description": "My first express server under the guidance of Angela Yu.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Rhea Wang",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

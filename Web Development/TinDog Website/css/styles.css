@@ -1,0 +1,219 @@
+
+
+
+body
+{
+  font-family: 'Montserrat',sans-serif;
+  text-align: center;
+}
+h1,h2,h3,h4,h5,h6
+{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bold;
+}
+h1
+{
+   line-height: 1.5;
+   font-size: 3rem;
+}
+.big-heading
+{
+  line-height:1.5;
+  font-size: 3rem;
+}
+.section-heading
+{
+  font-size:3rem;
+  line-height: 1.5;
+}
+i
+{
+  margin:3px;
+}
+.container-fluid
+{
+  padding: 5% 10%;
+}
+.white-section
+{
+  background-color: #fff;
+}
+.colored-section
+{
+  background-color: #ff4c68;
+  color:#fff;
+}
+
+/* title section */
+#title .container-fluid
+{
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/* Navigation bar */
+.navbar
+{
+  padding-bottom: 4.5rem;
+}
+.navbar-brand
+{
+  font-family: 'Ubuntu',sans-serif;
+  font-size:2.5rem;
+}
+.nav-item
+{
+  padding: 0 18px;
+}
+.nav-link
+{
+  font-size: 1.2rem;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: lighter;
+}
+
+
+/* Download button */
+.download-btn
+{
+  margin: 5% 3% 5% 0;
+}
+
+/* Title image */
+.title-image
+{
+  width:20%;
+  position:absolute;
+  margin-left:50px;
+
+}
+.rotated
+{
+  transform: rotate(20deg);
+}
+
+/* Features */
+#features
+{
+  font-family: 'Montserrat',sans-serif;
+  padding:4% 15%;
+  position:relative;
+  z-index:1;
+  background-color: #fff;
+}
+.feature-title
+{
+  font-size: 1.5rem;
+}
+.fa-solid
+{
+  color:#000;
+  size:100px;
+}
+.fa-solid:hover
+{
+color:#ff4c68;
+}
+.feature-description
+{
+  color:#8f8f8f;
+}
+.feature-icon
+{
+  margin:20px;
+}
+
+
+/* testimonials */
+#testimonials
+{
+  text-align:center;
+  padding:80px;
+}
+.testimonial-image
+{
+  width: 15%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.testimonial-size
+{
+  font-size:3rem;
+  line-height: 1.5;
+}
+
+/* press */
+#press
+{
+  background-color: #fff;
+}
+.press-logo
+{
+  width: 15%;
+  margin: 40px 30px 20px;
+}
+
+
+/* pricing */
+#pricing
+{
+  padding:100px;
+  margin:30px auto 0 auto;
+}
+.card
+{
+  margin:10px;
+  color: #000;
+}
+.pricing-column
+{
+  padding: 3% 2%;
+}
+.price-text
+{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 1028px)
+{
+  .title-image
+  {
+    width:70%;
+    position:static;
+    margin-left:50px;
+    text-align: center;
+
+  }
+  .rotated
+  {
+    transform: rotate(0deg);
+  }
+}
+
+
+/* cta */
+#cta{
+  font-family: 'Montserrat';
+  font-weight: bolder;
+}
+.cta-text
+{
+  font-size: 3.5rem;
+  padding: 50px 300px 10px 300px;
+}
+.download-btn-bottom
+{
+  margin: 5% 1%;
+}
+
+/* footer */
+.fa-logo-bottom
+{
+  margin: 3% 0.5% 1%;
+}
+.fa-solid-bottom
+{
+  color:#000;
+}

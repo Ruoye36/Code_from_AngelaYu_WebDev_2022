@@ -1,0 +1,26 @@
+/*This is a CSS comment. Refer to MDN docs for interactive illustrations.*/
+/*External CSS*/
+body {
+  background-color: powderblue;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 15px;
+  border-color: grey;
+  height: px;
+  width: 10%;
+}
+
+h1 {
+  color: #66BFBF;
+}
+
+h3 {
+  color: #66BFBF;
+}
+
+img {
+  height: 250px;
+}

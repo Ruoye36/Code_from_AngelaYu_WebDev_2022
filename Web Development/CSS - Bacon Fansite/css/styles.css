@@ -1,0 +1,39 @@
+/***** TAG SELETCTORS *****/
+h1
+{
+  color: red;
+  font-size: 20px;
+  /*Better keep the properties in alphabetical order so that it's easier to find them.*/
+}
+/*
+img
+{
+  background-color: red;
+}
+*/
+
+/***** CLASS SELETCTORS *****/
+.bacon
+{
+  background-color: green;
+}
+
+.broccoli
+{
+  background-color: red;
+}
+
+/*specificality: id > tag > class. One element can have multiple classes but only one id.*/
+
+/***** ID SELECTORS *****/
+#heading1-1,
+#heading1-2 {
+  color:blue;
+}
+
+
+/*psuedo class: for html elements that have different states*/
+img:hover
+{
+  background-color: gold;
+}

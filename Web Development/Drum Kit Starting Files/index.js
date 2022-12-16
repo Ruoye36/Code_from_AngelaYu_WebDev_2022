@@ -1,0 +1,73 @@
+/*
+2 ways of traverse every element of a certain tag/class/...:
+1-by index
+//for(var i=0;i<document.querySelectorAll(".drum").length;i++)
+//  document.querySelectorAll("button")[i].addEventListener("click", function (){alert("I got clicked!");});
+2-by element
+//const drums=document.querySelectorAll(".drum");
+//drums.forEach((drum)=>{drum.addEventListener("click", function (){alert("I got clicked!");});})
+
+*/
+
+
+//detecting button press
+var audio = new Audio("sounds/tom-1.mp3");
+const drums = document.querySelectorAll(".drum");
+drums.forEach((drum) => {
+  drum.addEventListener("click", function() {
+  var buttonInnerHTML = this.innerHTML;
+  makeSound(buttonInnerHTML);
+  buttonAnimation(buttonInnerHTML);
+  });
+})
+
+//detecting keyboard press
+document.addEventListener("keydown",function(event){
+  makeSound(event.key);
+  buttonAnimation(event.key);
+});
+
+function makeSound(key)
+{
+  switch (key) {
+    case "w":
+      var tom1 = new Audio("sounds/tom-1.mp3");
+      tom1.play();
+      break;
+    case "a":
+      var tom2 = new Audio("sounds/tom-2.mp3");
+      tom2.play();
+      break;
+    case "s":
+      var tom3 = new Audio("sounds/tom-3.mp3");
+      tom3.play();
+      break;
+    case "d":
+      var tom4 = new Audio("sounds/tom-4.mp3");
+      tom4.play();
+      break;
+    case "j":
+      var crash = new Audio("sounds/crash.mp3");
+      crash.play();
+      break;
+    case "k":
+      var kick = new Audio("sounds/kick-bass.mp3");
+      kick.play();
+      break;
+    case "l":
+      var snare = new Audio("sounds/snare.mp3");
+      snare.play();
+      break;
+    default:
+
+  }
+}
+
+function buttonAnimation(key)
+{
+  var activeButton=document.querySelector("."+key);
+  activeButton.classList.add("pressed");
+  setTimeout(function(){
+    activeButton.classList.remove("pressed");
+  },250);
+}
